@@ -1,0 +1,11 @@
+<%= @user.name %><br>
+
+Nausea: <%= @user.nausea %><br>
+Happiness: <%= @user.happiness %><br>
+Mood: <%= @user.mood %><br>
+Tickets: <%= @user.tickets %><br>
+Height: <%= @user.height %><br>
+<%= "ADMIN" if @user.admin %><br>
+
+<%= link_to "Log Out", logout_path, method: :delete %>
+<%= link_to "See attractions", attractions_path %>
